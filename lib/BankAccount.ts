@@ -1,6 +1,6 @@
 class BankAccount {
   static MAXIMUM_WITHDRAWAL_LIMIT: number = 40000;
-  static MINIMUM_WITHDRAWAL_LIMIT: number = 40000;
+  static MINIMUM_WITHDRAWAL_LIMIT: number = 200;
 
   balance: number = 0;
 
