@@ -10,7 +10,9 @@ class BankAccount {
   }
 
   withdraw (amount: number) {
-    this.balance = this.balance - amount;
+    if (this.balance > amount) {
+      this.balance = this.balance - amount;
+    }
   }
 };
 
