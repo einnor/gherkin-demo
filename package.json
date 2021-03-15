@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require features/stepDefinitions/**/*.ts --format json:gherkin-demo.test-results.json"
+    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require features/stepDefinitions/**/*.ts --format json:gherkin-demo.test-results.json && jsonjunit --json gherkin-demo.test-results.json --junit gherkin-demo.test-results.xml"
   },
   "keywords": [],
   "author": "",
