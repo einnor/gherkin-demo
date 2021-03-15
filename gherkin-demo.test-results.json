@@ -1,0 +1,463 @@
+[
+  {
+    "description": "  As a customer I can withdraw cash from my bank account",
+    "elements": [
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn-is-below-account-balance",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Cash withdrawn is below account balance",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I have Ksh. 1000 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I withdraw Ksh. 700",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "My balance is Ksh. 300",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn-is-above-account-balance",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Cash withdrawn is above account balance",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I have Ksh. 1000 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I withdraw Ksh. 1800",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "My balance is Ksh. 1000",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn-is-above-withdrawal-limit",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Cash withdrawn is above withdrawal limit",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I have Ksh. 100000 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I withdraw Ksh. 50000",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "My balance is Ksh. 100000",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn-is-below-withdrawal-limit",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Cash withdrawn is below withdrawal limit",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I have Ksh. 1000 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I withdraw Ksh. 100",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "My balance is Ksh. 1000",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Cash withdrawn",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I have Ksh. 0 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I withdraw Ksh. 100",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "My balance is Ksh. 0",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Cash withdrawn",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I have Ksh. 100 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I withdraw Ksh. 100",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "My balance is Ksh. 100",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Cash withdrawn",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I have Ksh. 200 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I withdraw Ksh. 200",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "My balance is Ksh. 0",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Cash withdrawn",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I have Ksh. 5000 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I withdraw Ksh. -200",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "My balance is Ksh. 5000",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "withdrawal;cash-withdrawn",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Cash withdrawn",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I have Ksh. 500000 in my account",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I withdraw Ksh. 600000",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "My balance is Ksh. 500000",
+            "match": {
+              "location": "features/stepDefinitions/withdrawal.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "withdrawal",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Withdrawal",
+    "tags": [],
+    "uri": "features/withdrawal.feature"
+  }
+]

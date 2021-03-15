@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require features/stepDefinitions/**/*.ts"
+    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require features/stepDefinitions/**/*.ts --format json:gherkin-demo.test-results.json"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^7.0.0",
     "@types/node": "^14.14.31",
+    "jsonjunit": "^1.0.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   }
